@@ -1,0 +1,87 @@
+body {
+  background-color: #a3d8f4;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+
+}
+/* the animation section allows the glowing effect along with the @keyframes, gows between the glow coles chosen in the from to */
+h1 {
+  font-family: 'frozen';
+  font-size: 64px;
+  color: #cfeeff;
+  text-shadow: 2px 2px 4px #57a9d7;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+/* This section allown the animation effects of h1 to glow and fade different shades */
+@keyframes glow {
+  from {
+    text-shadow: 2px 2px 4px #e3e6e8;
+  }
+  to {
+    text-shadow: 0px 0px 10px #78c8ff, 0px 0px 20px #78c8ff, 0px 0px 30px #78c8ff;
+  }
+}
+/* this section imports and changes the font styling o the elements for this */
+@font-face {
+    font-family: "frozen";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  /* styling the table and the rows and cells involved, adding a cursor for user to see where it is and make it fun . the transition allows for the cplor of the hover
+  to smoothly change from color to color for user to see that it can be clicked/toggled*/
+  td {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #78c8ff;
+    background-color: #d6f1ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  /* puts the effect fit the color of cells to change color when user hovers over each cell of the rows */
+  td:hover {
+    background-color: #a3d8f4;
+  }
+
+
+/* Class Section */
+  /* This css class section will allow to have the same effects as the h1 text effects */
+.display{
+    font-family: 'frozen';
+    font-size: 45px;
+    color: #cfeeff;
+    text-shadow: 2px 2px 4px #57a9d7;
+    animation: glow 2s ease-in-out infinite alternate;
+
+}
+@keyframes glow {
+    from {
+      text-shadow: 2px 2px 4px #e3e6e8;
+    }
+    to {
+      text-shadow: 0px 0px 10px #78c8ff, 0px 0px 20px #78c8ff, 0px 0px 30px #78c8ff;
+    }
+  }
+  @font-face {
+      font-family: "frozen";
+      src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
+    }
+  
+/* ID Section */
+ /* This css class section will allow to have the same effects as the h1 text effects */
+#reset {
+    font-family: 'frozen';
+    font-size: 45px;
+    color: #124966;
+    text-shadow: 2px 2px 4px #57a9d7;
+    animation: glow 2s ease-in-out infinite alternate;
+
+  }
+  
+  @font-face {
+    font-family: "frozen";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
+  }

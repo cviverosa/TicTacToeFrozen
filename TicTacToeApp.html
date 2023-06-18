@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styling.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Tic Tac Toe ❄️</title>
+  </head>
+  <body>
+    <h1>Frozen Tic Tac Toe</h1>
+    <section class="display">
+      Player <span class="display-player playerX">Olaf</span>'s turn
+    </section>
+    <table>
+      <tr>
+        <!-- Addin a class to the td to be able to style and format it -->
+        <td class="cell"></td>
+        <td class="cell"></td>
+        <td class="cell"></td>
+      </tr>
+      <tr>
+        <td class="cell"></td>
+        <td class="cell"></td>
+        <td class="cell"></td>
+      </tr>
+      <tr>
+        <td class="cell"></td>
+        <td class="cell"></td>
+        <td class="cell"></td>
+      </tr>
+    </table>
+    <section class="display announcer hide"></section>
+    <section class="controls">
+      <button id="reset">Play Again</button>
+    </section>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="TicTacToeApp.js"></script>
+  </body>
+</html>
